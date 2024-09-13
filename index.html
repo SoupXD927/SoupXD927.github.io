@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            color: #fff;
+            background-color: #333;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            background-image: url('banner2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 350px;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+
+        nav {
+            width: 250px;
+            padding: 1em;
+            background-color: #f4f4f4;
+            border-right: 1px solid #ddd;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav h1 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 1em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            flex: 1;
+            padding: 2em;
+            text-align: left; /* ตั้งค่าให้เนื้อหาใน article อยู่ซ้าย */
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify; /* จัดข้อความให้กระจายออก */
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin: 2em 0;
+        }
+
+        .centered-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            nav {
+                width: 100%;
+                border-right: none;
+                border-bottom: 2px solid #ddd;
+            }
+
+            article {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header></header>
+
+    <div class="main-content">
+        <nav>
+            <h1>ข้อมูล</h1>
+            <ul>
+                <li><h4><a href="index.html">หน้าHome</a></h4></li>
+                <li><h4><a href="ความเป็นมาของ TATC.html">ความเป็นมาของ TATC</a></h4></li>
+                <li><h4><a href="อัตลักษณ์.html">อัตลักษณ์</a></h4></li>
+                <li><h4><a href="ปรัชญา วิสัยทัศน์ พันธกิจ.html">ปรัชญา</a></h4></li>
+                <li><h4><a href="นโยบายของวิทยาลัย.html">นโยบาย</a></h4></li>
+                <li><h4><a href="ทำเนียม.html">ทำเนียม</a></h4></li>
+                <li><h4><a href="ใบงาน.html">ใบงาน</a></h4></li>
+                <li><h4><a href="ฟอร์ม.html">ฟอร์ม</a></h4></li>
+                <li><h4><a href="ประวัติส่วนตัว003.html">ผู้จัดทำ</a></h4></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1 style="color: #b35555; font-size: 2.5em; text-align: center; margin-bottom: 1em; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">ยินดีต้อนรับสู่หน้า Home</h1>
+            
+            <div style="border: 1px solid #ddd; padding: 1em; background-color: #f4f8fb; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1);">
+                <center><h3>งานนี้เป็นมินิโปรเจค</h3>
+                <h3>ของนาย กรวิชญ์ ยงค์เพ็ชร</h3>
+                <h3>ถ้าท่านอยากรู้ขอมูลเรื่องของเค้ามากกว่านี้ สามารถคลิกลิ้งข้างล่างได้เลยคับ</h3>
+                <h2>I</h2>
+                <h2>V</h2>
+                <h4><a href="ประวัติส่วนตัว003.html">ผมเองคับ</a></h4>
+                </center>
+                
+            </div>
+            
+            <hr color="black">
+        </article>
+    </div>
+
+    <footer>นายกรวิชญ์ ยงค์เพ็ชร สท.2/1 003</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มกรอกข้อมูล</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            color: #fff;
+            background-color: #333;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            background-image: url('banner2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 350px;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+
+        nav {
+            width: 250px;
+            padding: 1em;
+            background-color: #f4f4f4;
+            border-right: 1px solid #ddd;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav h1 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 1em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            flex: 1;
+            padding: 2em;
+            text-align: left;
+        }
+
+        h1, h4 {
+            color: #2c3e50;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin: 2em 0;
+        }
+
+        .centered-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        label, select, input[type="text"], input[type="email"], input[type="password"], textarea {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        select {
+            padding: 8px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .radio-group, .select-group {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .radio-group input {
+            width: auto;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            nav {
+                width: 100%;
+                border-right: none;
+                border-bottom: 2px solid #ddd;
+            }
+
+            article {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header></header>
+
+    <div class="main-content">
+        <nav>
+            <h1>ข้อมูล</h1>
+            <ul>
+                <li><h4><a href="index.html">หน้าHome</a></h4></li>
+                <li><h4><a href="ความเป็นมาของ TATC.html">ความเป็นมาของ TATC</a></h4></li>
+                <li><h4><a href="อัตลักษณ์.html">อัตลักษณ์</a></h4></li>
+                <li><h4><a href="ปรัชญา วิสัยทัศน์ พันธกิจ.html">ปรัชญา</a></h4></li>
+                <li><h4><a href="นโยบายของวิทยาลัย.html">นโยบาย</a></h4></li>
+                <li><h4><a href="ทำเนียม.html">ทำเนียม</a></h4></li>
+                <li><h4><a href="ใบงาน.html">ใบงาน</a></h4></li>
+                <li><h4><a href="ฟอร์ม.html">ฟอร์ม</a></h4></li>
+                <li><h4><a href="ประวัติส่วนตัว003.html">ผู้จัดทำ</a></h4></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1 style="color: #000000; font-size: 2.5em; text-align: center; margin-bottom: 1em; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">กรอกข้อมูล</h1>
+            <hr>
+            <!-- ส่วนของฟอร์มกรอกข้อมูล -->
+            <div class="form-container">
+                <form>
+                    <h4>ชื่อ-นามสกุล</h4>
+                    <input id="name" name="name" type="text" maxlength="30" placeholder="กรอกชื่อของคุณ" required>
+
+                    <h4>วัน/เดือน/ปีเกิด</h4>
+                    <div class="select-group">
+                        <select name="วัน" required>
+                            <option value="" disabled selected>วัน</option>
+                            <!-- เพิ่มตัวเลือกวันที่ที่เหลือ -->
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <!-- ... -->
+                            <option value="31">31</option>
+                        </select>
+
+                        <select name="เดือน" required>
+                            <option value="" disabled selected>เลือกเดือน</option>
+                            <!-- เพิ่มตัวเลือกเดือนที่เหลือ -->
+                            <option value="1">มกราคม</option>
+                            <option value="2">กุมภาพันธ์</option>
+                            <!-- ... -->
+                            <option value="12">ธันวาคม</option>
+                        </select>
+
+                        <select name="ปี" required>
+                            <option value="" disabled selected>เลือกปี</option>
+                            <!-- เพิ่มตัวเลือกปีที่เหลือ -->
+                            <option value="2567">2567</option>
+                            <option value="2566">2566</option>
+                            <!-- ... -->
+                            <option value="2550">2550</option>
+                        </select>
+                    </div>
+
+                    <h4>เพศ</h4>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="ชาย" required> ชาย</label>
+                        <label><input type="radio" name="gender" value="หญิง" required> หญิง</label>
+                    </div>
+
+                    <h4>สถานะ</h4>
+                    <select id="status" name="status" required>
+                        <option value="" disabled selected>เลือกสถานะ</option>
+                        <option value="โสด">โสด</option>
+                        <option value="มีแฟน">มีแฟน</option>
+                        <option value="แต่งงาน">แต่งงาน</option>
+                        <option value="หย่าร้าง">หย่าร้าง</option>
+                        <option value="หม้าย">หม้าย</option>
+                    </select>
+
+                    <h4>ศาสนา</h4>
+                    <select id="religion" name="religion" required>
+                        <option value="" disabled selected>เลือกศาสนา</option>
+                        <option value="พุทธ">พุทธ</option>
+                        <option value="คริสต์">คริสต์</option>
+                        <option value="อิสลาม">อิสลาม</option>
+                        <option value="ฮินดู">ฮินดู</option>
+                        <option value="ซิกข์">ซิกข์</option>
+                    </select>
+
+                    <h4>ที่อยู่</h4>
+                    <textarea name="ที่อยู่" rows="4" placeholder="กรอกที่อยู่ของคุณ" required></textarea>
+
+                    <h4>เบอร์ติดต่อ</h4>
+                    <input id="phone" name="phone" type="text" maxlength="15" placeholder="กรอกเบอร์ติดต่อ" required>
+
+                    <h4>อีเมล</h4>
+                    <input id="email" name="email" type="email" maxlength="50" placeholder="กรอกอีเมล" required>
+
+                    <h4>รหัสผ่าน</h4>
+                    <input id="password" name="password" type="password" maxlength="30" placeholder="กรอกรหัสผ่าน" required>
+
+                    <button type="submit" class="submit-btn">ส่งข้อมูล</button>
+                </form>
+            </div>
+        </article>
+        
+    </div>
+
+</body>
+</html>
